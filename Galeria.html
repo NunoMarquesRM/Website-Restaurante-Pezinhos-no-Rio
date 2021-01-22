@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Restaurante Pézinhos no Rio">
+		<meta name="author" content="Nuno Marques">
+		<meta name="keywords" lang="pt" content="restaurante,pézinhos,rio,ementa,gastronomia,constância">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Pézinhos no Rio</title>
+		<link href="layout.css" rel="stylesheet" type="text/css"/>
+		<link rel="icon" href="favicon.png">
+	</head>
+	<body>
+		<header class="header_site">
+			<figure id="banner"><img width="100%" height="200px" src="imagens/header.jpg"></figure>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="Restaurante.html">Restaurante Pézinhos no Rio</a></li>
+					<li class="dropdown">
+						<a class="dropbtn">Ementa</a>
+						<div class="dropdown-content">
+							<a href="Petiscos.html">Petiscos</a>
+							<a href="Carnes.html">Carne</a>
+							<a href="Peixe.html">Peixe</a>
+							<a href="Sobremesa.html">Sobremesas</a>
+							<a href="Especialidades.html">Especialidades</a>
+						</div>
+					</li>
+				<li><a href="Galeria.html" class="select">Galeria</a></li>
+				<li><a href="Localizacao.html">Localização</a></li>
+				<li id="contact">
+					<details>
+						<summary>Contacto: <mark id="contact">+351 249 733 093</mark></summary>
+						<address>pezinhosnorio@gmail.com</address>
+					</details>
+				</li>
+			</ul>
+		</nav>
+		<article class="row">
+			<section class="col-9 col-m-12">
+				<article>
+					<section>
+						<p id="contents">Apresentamos algumas imagens referentes às vistas do restaurante e da vila de Constância.</p>
+					</section>
+					<section class="row1"> 
+						<section class="column">
+							<img id="myImg3" src="imagens/galeria_c1_01.png" style="width:100%">
+							<img id="myImg4" src="imagens/galeria_c1_02.png" style="width:100%">
+							<img id="myImg5" src="imagens/galeria_c1_03.png" style="width:100%">
+							<img id="myImg7" src="imagens/galeria_c1_05.jpg" style="width:100%">
+						</section>
+						<section class="column">
+							<img id="myImg8" src="imagens/galeria_c2_01.png" style="width:100%">
+							<img id="myImg9" src="imagens/galeria_c2_02.png" style="width:100%">
+							<img id="myImg15" src="imagens/galeria_c2_04.jpg" style="width:100%">
+							<img id="myImg10" src="imagens/galeria_c2_03.jpg" style="width:100%">
+						</section>  
+						<section class="column">
+							<img id="myImg11" src="imagens/galeria_c3_01.jpg" style="width:100%">
+							<img id="myImg12" src="imagens/galeria_c3_02.jpg" style="width:100%">
+							<img id="myImg13" src="imagens/galeria_c3_03.jpg" style="width:100%">
+							<img id="myImg14" src="imagens/galeria_c3_04.jpg" style="width:100%">
+						</section>
+					</section>
+					<!-- The Modal -->
+					<section id="myModal" class="modal">
+						<span class="close">&times;</span>
+						<img class="modal-content" id="img01">
+						<section id="caption"></section>
+					</section>
+				</article>
+			</section>
+			<aside class="col-3 col-m-12">
+				<figure id="wordcloud">
+					<img src="imagens/wordcloud_pequena.png" width="270" height="134" id="wordcloud" usemap="#map1">
+					<map name="map1">
+						<area href="index.html" shape="rect" coords="35,0,235,33">
+						<area href="Galeria.html" shape="rect" coords="100,36,136,45">
+						<area href="Galeria.html" shape="rect" coords="102,48,149,57">
+						<area href="Especialidades.html" shape="rect" coords="148,38,202,47">
+						<area href="Restaurante.html" shape="rect" coords="0,57,270,84">
+						<area href="Restaurante.html#C" shape="rect" coords="120,85,166,93">
+						<area href="Galeria.html" shape="rect" coords="84,95,257,133">
+					</map>
+				</figure>
+				<table>
+					<caption>Horário</caption>
+					<thead><tr><th>Segunda-feira</th><td id="hours">09:00-23:45</td></tr></thead>
+					<tbody>
+						<tr><th>Terça-feira</th><td id="hours">09:00-23:45</td></tr>
+						<tr><th id="background">Quarta-feira</th><td id="close">Fechado</td></tr>
+						<tr><th>Quinta-feira</th><td id="hours">09:00-23:45</td></tr>
+						<tr><th>Sexta-feira</th><td id="hours">09:00-23:45</td></tr>
+						<tr><th>Sábado</th><td id="hours">09:00-23:45</td></tr>
+					</tbody>
+					<tfoot><tr><th>Domingo</th><td id="hours">09:00-23:45</td></tr></tfoot>
+				</table>
+				<section id="small_map">
+					<iframe id="small_map" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d7324.608633527186!2d-8.339913997128924!3d39.47794488721733!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-PT!2spt!4v1514028935164" width="280" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</section>
+			</aside>
+		</article>
+		<footer>
+			<p>© Copyright 2018 Restaurante Pézinhos no Rio. All rights reserved to Nuno Marques</p>
+		</footer>
+		<script>
+			// Get the modal
+			var modal = document.getElementById('myModal');
+			// Get the image
+			var img3 = document.getElementById('myImg3');
+			var img4 = document.getElementById('myImg4');
+			var img5 = document.getElementById('myImg5');
+			var img7 = document.getElementById('myImg7');
+			var img8 = document.getElementById('myImg8');
+			var img9 = document.getElementById('myImg9');
+			var img10 = document.getElementById('myImg10');
+			var img11 = document.getElementById('myImg11');
+			var img12 = document.getElementById('myImg12');
+			var img13 = document.getElementById('myImg13');
+			var img14 = document.getElementById('myImg14');
+			var img15 = document.getElementById('myImg15');
+			// Insert it inside the modal - use its "alt" text as a caption
+			var modalImg = document.getElementById("img01");
+			var captionText = document.getElementById("caption");
+			//handle click for myImg3
+			img3.onclick = function(){
+				modal.style.display = "block";
+				modalImg.src = this.src;
+				captionText.innerHTML = this.alt;
+			}
+			//handle click for myImg4
+			img4.onclick = function(){
+				modal.style.display = "block";
+				modalImg.src = this.src;
+				captionText.innerHTML = this.alt;
+			}
+			//handle click for myImg5
+			img5.onclick = function(){
+				modal.style.display = "block";
+				modalImg.src = this.src;
+				captionText.innerHTML = this.alt;
+			}
+			//handle click for myImg7
+			img7.onclick = function(){
+				modal.style.display = "block";
+				modalImg.src = this.src;
+				captionText.innerHTML = this.alt;
+			}
+			//handle click for myImg8
+			img8.onclick = function(){
+				modal.style.display = "block";
+				modalImg.src = this.src;
+				captionText.innerHTML = this.alt;
+			}
+			//handle click for myImg9
+			img9.onclick = function(){
+				modal.style.display = "block";
+				modalImg.src = this.src;
+				captionText.innerHTML = this.alt;
+			}
+			//handle click for myImg10
+			img10.onclick = function(){
+				modal.style.display = "block";
+				modalImg.src = this.src;
+				captionText.innerHTML = this.alt;
+			}
+			//handle click for myImg11
+			img11.onclick = function(){
+				modal.style.display = "block";
+				modalImg.src = this.src;
+				captionText.innerHTML = this.alt;
+			}
+			//handle click for myImg12
+			img12.onclick = function(){
+				modal.style.display = "block";
+				modalImg.src = this.src;
+				captionText.innerHTML = this.alt;
+			}
+			//handle click for myImg13
+			img13.onclick = function(){
+				modal.style.display = "block";
+				modalImg.src = this.src;
+				captionText.innerHTML = this.alt;
+			}
+			//handle click for myImg14
+			img14.onclick = function(){
+				modal.style.display = "block";
+				modalImg.src = this.src;
+				captionText.innerHTML = this.alt;
+			}
+			//handle click for myImg15
+			img15.onclick = function(){
+				modal.style.display = "block";
+				modalImg.src = this.src;
+				captionText.innerHTML = this.alt;
+			}
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close")[0];
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function(){ 
+				modal.style.display = "none";
+			}
+		</script>
+	</body>
+</html>

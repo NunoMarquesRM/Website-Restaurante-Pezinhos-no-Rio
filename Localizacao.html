@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Restaurante Pézinhos no Rio">
+		<meta name="author" content="Nuno Marques">
+		<meta name="keywords" lang="pt" content="restaurante,pézinhos,rio,ementa,gastronomia,constância">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Pézinhos no Rio</title>
+		<link href="layout.css" rel="stylesheet" type="text/css"/>
+		<link rel="icon" href="favicon.png">
+	</head>
+	<body>
+		<header class="header_site">
+			<figure id="banner"><img width="100%" height="200px" src="imagens/header.jpg"></figure>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="Restaurante.html">Restaurante Pézinhos no Rio</a></li>
+					<li class="dropdown">
+						<a class="dropbtn">Ementa</a>
+						<div class="dropdown-content">
+							<a href="Petiscos.html">Petiscos</a>
+							<a href="Carnes.html">Carne</a>
+							<a href="Peixe.html">Peixe</a>
+							<a href="Sobremesa.html">Sobremesas</a>
+							<a href="Especialidades.html">Especialidades</a>
+						</div>
+					</li>
+				<li><a href="Galeria.html">Galeria</a></li>
+				<li><a href="Localizacao.html" class="select">Localização</a></li>
+				<li id="contact">
+					<details>
+						<summary>Contacto: <mark id="contact">+351 249 733 093</mark></summary>
+						<address>pezinhosnorio@gmail.com</address>
+					</details>
+				</li>
+			</ul>
+		</nav>
+		<article class="row">
+			<section class="col-9 col-m-12">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d7324.608633527186!2d-8.339913997128924!3d39.47794488721733!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-PT!2spt!4v1514028935164" width="100%" height="450" frameborder="0" style="border:3px solid #008000; border-radius: 10px; box-shadow: 10px 10px 30px black; margin-top:50px;" allowfullscreen></iframe>
+			</section>
+			<aside class="col-3 col-m-12">
+				<figure id="wordcloud">
+					<img src="imagens/wordcloud_pequena.png" width="270" height="134" id="wordcloud" usemap="#map1">
+					<map name="map1">
+						<area href="index.html" shape="rect" coords="35,0,235,33">
+						<area href="Galeria.html" shape="rect" coords="100,36,136,45">
+						<area href="Galeria.html" shape="rect" coords="102,48,149,57">
+						<area href="Especialidades.html" shape="rect" coords="148,38,202,47">
+						<area href="Restaurante.html" shape="rect" coords="0,57,270,84">
+						<area href="Restaurante.html#C" shape="rect" coords="120,85,166,93">
+						<area href="Galeria.html" shape="rect" coords="84,95,257,133">
+					</map>
+				</figure>
+				<table>
+					<caption>Horário</caption>
+					<thead><tr><th>Segunda-feira</th><td id="hours">09:00-23:45</td></tr></thead>
+					<tbody>
+						<tr><th>Terça-feira</th><td id="hours">09:00-23:45</td></tr>
+						<tr><th id="background">Quarta-feira</th><td id="close">Fechado</td></tr>
+						<tr><th>Quinta-feira</th><td id="hours">09:00-23:45</td></tr>
+						<tr><th>Sexta-feira</th><td id="hours">09:00-23:45</td></tr>
+						<tr><th>Sábado</th><td id="hours">09:00-23:45</td></tr>
+					</tbody>
+					<tfoot><tr><th>Domingo</th><td id="hours">09:00-23:45</td></tr></tfoot>
+				</table>
+			</aside>
+			<section class="col-12 col-m-12">
+				<h1 id="pagLocal">Parques de Estacionamento</h1>
+				<p id="contents"> Existem diversos locais acessíveis para o estacionamento do seu veículo. Apresentamos alguns:</p>
+				<ul id="local1">
+					<li id="local2"><p>Estacionamento junto ao restaurante</p></li>
+						<iframe src="https://www.google.com/maps/embed?pb=!4v1514030226849!6m8!1m7!1sGjG2CZtcFROQhxMye21YFw!2m2!1d39.47445847999783!2d-8.338717516596633!3f67.5200845317974!4f-8.9007876169007!5f0.7820865974627469" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+					<li id="local2"><p>Parque de estacionamento junto ao jardim</p></li>
+						<iframe src="https://www.google.com/maps/embed?pb=!4v1514032584672!6m8!1m7!1s7-s2jkMYnB3Sxbm1gLrmZQ!2m2!1d39.47474484283264!2d-8.340089288110981!3f343.69677408016304!4f-10.291132687545073!5f0.7820865974627469" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</ul>
+			</section>
+		</article>
+		<footer>
+			<p>© Copyright 2018 Restaurante Pézinhos no Rio. All rights reserved to Nuno Marques</p>
+		</footer>
+	</body>
+</html>

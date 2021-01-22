@@ -1,0 +1,669 @@
+/*Cores usadas:
+	#ffffff - branco (fundo)
+	#008000 - verde (fundo do menu)
+	#ff0000 - vermelho (header do home)
+	#000000 - preto (footer)
+*/
+/*---Display---*/
+*{
+	box-sizing: border-box;
+}
+[class*="col-"]{
+	float: left;
+	padding: 15px;
+}
+.row::after{
+	content: "";
+	clear: both;
+	display: table;
+}
+/* Mobile Phones: */
+[class*="col-"] {
+	width: 100%;
+}
+/* Tablets: */
+@media only screen and (min-width: 600px){
+	.col-m-1 {width: 8.33%;}
+	.col-m-2 {width: 16.66%;}
+	.col-m-3 {width: 25%;}
+	.col-m-4 {width: 33.33%;}
+	.col-m-5 {width: 41.66%;}
+	.col-m-6 {width: 50%;}
+	.col-m-7 {width: 58.33%;}
+	.col-m-8 {width: 66.66%;}
+	.col-m-9 {width: 75%;}
+	.col-m-10 {width: 83.33%;}
+	.col-m-11 {width: 91.66%;}
+	.col-m-12 {width: 100%;}
+}
+/* Desktop: */
+@media only screen and (min-width: 768px){
+	.col-1 {width: 8.33%;}
+	.col-2 {width: 16.66%;}
+	.col-3 {width: 25%;}
+	.col-4 {width: 33.33%;}
+	.col-5 {width: 41.66%;}
+	.col-6 {width: 50%;}
+	.col-7 {width: 58.33%;}
+	.col-8 {width: 66.66%;}
+	.col-9 {width: 75%;}
+	.col-10 {width: 83.33%;}
+	.col-11 {width: 91.66%;}
+	.col-12 {width: 100%;}
+}
+/*--- Personalização do scrollbar ---*/
+/*Tamanho do scrollbar*/
+::-webkit-scrollbar{
+	width: 15px;
+}
+/*Aparência espalmada com a cor escolhida*/
+::-webkit-scrollbar-track{
+	background-color: #cfcfcf;
+}
+/*Muda a cor da barra principal*/
+::-webkit-scrollbar-thumb{
+	background-color: #99a3a4;
+}
+/* Cor dos botões do topo e do fundo da página*/
+::-webkit-scrollbar-button{
+	background-color: #008000;
+}
+/*--- Estilo personalizado dos links ---*/
+/* link não visitado */
+a#r:link{
+	color: #008000; /*green*/
+	background-color: transparent;
+	text-decoration: underline;
+	font-weight: bold;
+}
+/* link visitado */
+a#r:visited{
+	color: #008000; /*green*/
+	background-color: transparent;
+	text-decoration: underline;
+	font-weight: bold;
+}
+/* cursor por cima do link */
+a#r:hover{
+	color: #ff0000; /*red*/
+	background-color: transparent;
+	text-decoration: underline;
+	font-weight: bold;
+}
+/* cursor a premir link */
+a#r:active{
+	color: #ff0000; /*red*/
+	background-color: transparent;
+	text-decoration: underline;
+	font-weight: bold;
+}
+html, body{
+	font-family: Verdana, Geneva, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+/* Cor entre o header e o menu */
+.header_site{
+	background-color: #008000; /* green */
+}
+figure#banner{
+	display: block;
+	margin: 0;
+}
+/*--- Menu & Menu Dropdown ---*/
+ul{
+	margin: 5px 15px 0px 15px; /* top right bottom left */
+	padding: 0;
+	list-style-type: none;
+	font-family: Verdana, Geneva, sans-serif;
+	font-weight: normal;
+	font-size: 1em;
+	overflow: hidden;
+	background-color: #008000; /* green */
+	box-shadow: 10px 10px 30px black;
+	border-radius: 15px;
+}
+li{
+	float: left;
+	border-radius: 15px;
+	border-style: none solid none solid; /* top right bottom left */
+	border-width: 3px; /* thickness of the sides in the words */
+}
+/* Página que está selecionada no menu */
+.select{
+	background-color: #ff0000; /* red */
+	border-radius: 15px;
+}
+/* Personaliza o botão do Dropdown */
+li a, .dropbtn{
+	display: inline-block;
+	color: #ffffff; /* white */
+	text-align: center;
+	padding: 15px;
+	text-decoration: none;
+}
+/* Muda a cor de fundo do botão dropdown quando o conteúdo do dropdown é mostrado! */
+li a:hover, .dropdown:hover .dropbtn{
+	background-color: red;
+	border-radius: 15px;
+}
+/* Necessário para o posicionamento do conteúdo do dropdown */
+li.dropdown{
+    display: inline-block;
+}
+/* Conteúdo do Dropdown (Escondido por Default) */
+.dropdown-content{
+	display: none;
+	position: absolute;
+	background-color: #e5e5e5;
+	min-width: 100px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+	z-index: 1;
+	border-radius: 15px;
+}
+/* Personalização dos links dentro do dropdown */
+.dropdown-content a{
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+	border-radius: 30px;
+}
+/* Mostra o menu dropdown quando o cursor estiver por cima do botão! */
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+/*--- Contacto no menu ---*/
+li#contact{
+	float: right;
+	padding: 10px 20px 10px 0px; /* top right bottom left */
+	border-radius: 15px;
+	border-style: none;
+	color: #ffffff; /* white */
+}
+/* Muda a seta do rato para um apontador */
+li#contact:hover{
+	cursor: pointer;
+}
+mark#contact{
+	background-color: transparent;
+	font-weight: bold;
+	font-size: 1.1em;
+	color: #ffffff; /* white */
+}
+address{
+	padding-left: 100px;
+}
+/*--- Rodapé ---*/
+footer{
+	border-top: 3px solid #008000; /* green */
+	padding: 15px 5px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 0.8em;
+	color: #ffffff; /* white */
+	background-color: #000000; /* black */
+}
+/*--- Tabela ---*/
+table{
+	border-collapse: collapse;
+}
+/* Titulo da tabela */
+caption{
+	padding: 5px;
+	background-color: red;
+	border-radius: 15px;
+	font-weight: bold;
+	font-size: 1.1em;
+	color: black;
+}
+/* Titulos (dias da semana) */
+th{
+	padding: 5px;
+	text-align: left;
+}
+/* Horas */
+td#hours{
+	padding: 5px;
+	text-align: left;
+}
+/* Horas Quarta */
+th#background{
+	background-color: #cfcfcf;
+	border-radius: 15px;
+}
+td#close{
+	padding: 5px;
+	text-align: center;
+	font-weight: bold;
+	border-radius: 15px;
+	background-color: #cfcfcf;
+}
+iframe#small_map{
+	margin-top: 75px;
+}
+/*--- Lista localização ---*/
+h1#pagLocal{
+	font-family: Verdana, Geneva, sans-serif;
+	font-weight: bold;
+	font-style: normal;
+	font-size: 1.5em;
+	text-align: center;
+}
+ul#local1{
+	margin: 0 40px; /* top right bottom left */
+	padding: 0;
+	list-style-type: none;
+	font-family: Verdana, Geneva, sans-serif;
+	font-weight: normal;
+	font-size: 1.1em;
+	overflow: hidden;
+	background-color: #008000; /* green */
+	box-shadow: 10px 10px 30px black;
+	border-radius: 15px;
+}
+li#local2{
+	float: none;
+	border-radius: 15px;
+	text-align: center;
+	border-style: none;
+}
+/*--- Figura do wordcloud ---*/
+figure#wordcloud{
+	display: block;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-left: 3px;
+	margin-right: 0;
+}
+/*--- Header do home ---*/
+header#pag_home{
+	font-family: Brush Script MT, cursive;
+	margin-top: 50px;
+	margin-bottom: 0;
+}
+h1#slogan{
+	margin: 0;
+	display: block;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 3.2em;
+	text-align: center;
+	color: #ff0000;	/* red */
+	text-shadow: 1.3px 1.3px black; /* shadow behind the title */
+}
+/*--- Figura principal no home ---*/
+figure#home{
+	display: inline-block;
+	margin-top: 60px;
+	margin-bottom: 40px;
+	margin-left: 0;
+	margin-right: 0;
+}
+img#home_img{
+	border: 5px solid #008000;
+	border-radius: 15px;
+	width: 100%;
+}
+/*--- Titulo em home ---*/
+h2#events{
+	margin-top: 0;
+	margin-bottom: 40px;
+	margin-left: 0;
+	margin-right: 0;
+	display: block;
+	font-weight: bold;
+	font-style: normal;
+	font-size: 1.4em;
+	text-align: center;
+}
+mark#home_event{
+	background-color: transparent;
+	font-weight: bold;
+	font-size: 1em;
+	color: #ff0000; /* red */
+}
+p#contents{
+	text-align: justify;
+	text-indent: 50px;
+	line-height: 1.8em;
+}
+/*--- Restaurante ---*/
+/* Titulo Restaurante*/
+h1#title{
+	margin-top: 50px;
+	margin-bottom: 40px;
+	display: block;
+	font-weight: bold;
+	font-style: normal;
+	font-size: 1.4em;
+	text-align: center;
+}
+mark#restaurant{
+	background-color: transparent;
+	font-weight: bold;
+	font-size: 1em;
+	color: #000000;
+}
+mark#Restaurant_specialty{
+	background-color: transparent;
+	font-weight: bold;
+	font-size: 1em;
+	color: #008000; /* green */
+}
+/* imagens restaurante */
+figure#res{
+	display: block;
+	margin: auto;
+	text-align: center;
+	padding: 15px;
+}
+/*--- Restaurante ---*/
+/* Titulo Constância*/
+h2#title{
+	margin-top: 50px;
+	margin-bottom: 40px;
+	display: block;
+	font-weight: bold;
+	font-style: normal;
+	font-size: 1.4em;
+	text-align: center;
+}
+/*--- Ementa ---*/
+table#ementa{
+	margin-top: 50px;
+	margin-bottom: 10px;
+	margin-left: 0;
+	margin-right: 0;
+	width: 100%;
+}
+th#ementa{
+	border-bottom: 3px solid #e2e2e2;
+	text-align: center;
+	padding: 15px;
+	background-color: #008000;
+	color: #ffffff;
+}
+th#ementa_border{
+	border-left: 3px solid #e2e2e2;
+	border-bottom: 3px solid #e2e2e2;
+	text-align: center;
+	padding: 15px;
+	background-color: #008000;
+	color: #ffffff;
+}
+td#ementa{
+	border-bottom: 3px solid #e2e2e2;
+	text-align: center;
+	padding: 10px;
+}
+td#ementa_border{
+	border-left: 3px solid #e2e2e2;
+	border-bottom: 3px solid #e2e2e2;
+	text-align: center;
+	padding: 10px;
+}
+tr#ementa:hover{background-color: #e2e2e2;}
+td#ementa:hover{background-color: #e2e2e2;}
+td#ementa_border:hover{background-color: #e2e2e2;}
+p#contents_p{
+	text-align: justify;
+	text-indent: 50px;
+	line-height: 1.8em;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+/* tabela petiscos*/
+table#ementa_p{
+	margin:auto;
+	width: 50%;
+}
+/*--- Galeria (Imagens em colunas) ---*/
+.row1{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 4px;
+}
+/* Create four equal columns that sits next to each other */
+.column{
+	flex: 33.33%;
+	max-width: 33.33%;
+	padding: 0 4px;
+}
+.column img{
+	margin-top: 8px;
+	vertical-align: middle;
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px){
+	.column{
+		flex: 50%;
+		max-width: 50%;
+	}
+}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px){
+	.column {
+		flex: 100%;
+		max-width: 100%;
+	}
+}
+/* Imagens Galeria */
+#myImg3 {border-radius: 15px; cursor: pointer; transition: 0.3s;}
+#myImg3:hover {opacity: 0.7;}
+#myImg4 {border-radius: 15px; cursor: pointer; transition: 0.3s;}
+#myImg4:hover {opacity: 0.7;}
+#myImg5 {border-radius: 15px; cursor: pointer; transition: 0.3s;}
+#myImg5:hover {opacity: 0.7;}
+#myImg7 {border-radius: 15px; cursor: pointer; transition: 0.3s;}
+#myImg7:hover {opacity: 0.7;}
+#myImg8 {border-radius: 15px; cursor: pointer; transition: 0.3s;}
+#myImg8:hover {opacity: 0.7;}
+#myImg9 {border-radius: 15px; cursor: pointer; transition: 0.3s;}
+#myImg9:hover {opacity: 0.7;}
+#myImg10{border-radius: 15px; cursor: pointer; transition: 0.3s;}
+#myImg10:hover {opacity: 0.7;}
+#myImg11{border-radius: 15px; cursor: pointer; transition: 0.3s;}
+#myImg11:hover {opacity: 0.7;}
+#myImg12{border-radius: 15px; cursor: pointer; transition: 0.3s;}
+#myImg12:hover {opacity: 0.7;}
+#myImg13{border-radius: 15px; cursor: pointer; transition: 0.3s;}
+#myImg13:hover {opacity: 0.7;}
+#myImg14{border-radius: 15px; cursor: pointer; transition: 0.3s;}
+#myImg14:hover {opacity: 0.7;}
+#myImg15{border-radius: 15px; cursor: pointer; transition: 0.3s;}
+#myImg15:hover {opacity: 0.7;}
+/*--- Imagens Restaurante ---*/
+#myImg1{border: 5px solid #008000; border-radius: 15px; cursor: pointer; transition: 0.3s;}
+#myImg1:hover{opacity: 0.7;}
+#myImg2{border: 5px solid #008000; border-radius: 15px; cursor: pointer; transition: 0.3s;}
+#myImg2:hover{opacity: 0.7;}
+/* The Modal (background) */
+.modal{
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+/* Modal Content (image) */
+.modal-content{
+	margin: auto;
+	display: block;
+	width: 80%;
+	max-width: 700px;
+}
+/* Caption of Modal Image */
+#caption{
+	margin: auto;
+	display: block;
+	width: 80%;
+	max-width: 700px;
+	text-align: center;
+	color: #ffffff;
+	padding: 10px 0;
+	height: 150px;
+}
+/* Add Animation */
+.modal-content, #caption{    
+	-webkit-animation-name: zoom;
+	-webkit-animation-duration: 0.6s;
+	animation-name: zoom;
+	animation-duration: 0.6s;
+}
+@-webkit-keyframes zoom{
+	from {-webkit-transform:scale(0)} 
+	to {-webkit-transform:scale(1)}
+}
+@keyframes zoom{
+	from {transform:scale(0)} 
+	to {transform:scale(1)}
+}
+/* The Close Button */
+.close{
+	position: absolute;
+	top: 15px;
+	right: 35px;
+	color: #ffffff;
+	font-size: 40px;
+	font-weight: bold;
+	transition: 0.3s;
+}
+.close:hover, .close:focus{
+	color: #ff0000;
+	text-decoration: none;
+	cursor: pointer;
+}
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+	.modal-content{
+		width: 100%;
+	}
+}
+/*imagem petiscos*/
+#myCar{
+	border: 5px solid #008000;
+	border-radius: 15px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+#myCar:hover{
+	opacity: 0.7;
+}
+#myCar1{
+	border: 5px solid #008000;
+	border-radius: 15px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+#myCar1:hover{
+	opacity: 0.7;
+}
+#myMeat{
+	border: 5px solid #008000;
+	border-radius: 15px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+#myMeat:hover{
+	opacity: 0.7;
+}
+#myEsp{
+	border: 5px solid #008000;
+	border-radius: 15px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+#myEsp:hover{
+	opacity: 0.7;
+}
+/*---Layouts---*/
+@media only screen and (max-width: 600px){
+	table{
+		border-collapse: collapse;
+		margin: auto;
+	}
+	#myCar{
+		width: 300px;
+	}
+	#myCar1{
+		width: 300px;
+		height: 150px;
+	}
+	#myMeat{
+		width: 300px;
+		height: 400px;
+	}
+	#myEsp{
+		width: 300px;
+		height: 250px;
+	}
+}
+@media only screen and (max-width: 768px) and (min-width: 550px){
+	figure#wordcloud{
+		float: left;
+		margin-right: 40px;
+	}
+}
+@media only screen and (max-width: 880px) and (min-width: 768px){
+	img#wordcloud{
+		width: 150px;
+	}
+	iframe#small_map{
+		width: 150px;
+	}
+}
+@media only screen and (max-width: 1160px) and (min-width: 880px){
+	img#wordcloud{
+		width: 200px;
+	}
+	iframe#small_map{
+		width: 200px;
+	}
+}
+@media only screen and (max-width: 340px){
+	#myImg1{
+		width: 150px;
+		height: 100px;
+	}
+	#myImg2{
+		width: 150px;
+		height: 100px;
+	}
+	#myCar{
+		width: 150px;
+		height: 100px;
+	}
+	#myMeat{
+		width: 200px;
+		height: 300px;
+	}
+	#myCar1{
+		width: 150px;
+		height: 100px;
+	}
+	#myEsp{
+		width: 200px;
+		height: 150px;
+	}
+	img#wordcloud{
+		width: 200px;
+	}
+	iframe#small_map{
+		width: 200px;
+	}
+}
+/*Media query print*/
+@media print{
+    /* All your print styles go here */
+	aside,
+	nav,
+	footer,
+	section{display: none;}
+}

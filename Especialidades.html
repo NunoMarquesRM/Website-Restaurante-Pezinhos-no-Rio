@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Restaurante Pézinhos no Rio">
+		<meta name="author" content="Nuno Marques">
+		<meta name="keywords" lang="pt" content="restaurante,pézinhos,rio,ementa,gastronomia,constância">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Pézinhos no Rio</title>
+		<link href="layout.css" rel="stylesheet" type="text/css"/>
+		<link rel="icon" href="favicon.png">
+	</head>
+	<body>
+		<header class="header_site">
+			<figure id="banner"><img width="100%" height="200px" src="imagens/header.jpg"></figure>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="Restaurante.html">Restaurante Pézinhos no Rio</a></li>
+					<li class="dropdown">
+						<a class="dropbtn select">Ementa</a>
+						<div class="dropdown-content">
+							<a href="Petiscos.html">Petiscos</a>
+							<a href="Carnes.html">Carne</a>
+							<a href="Peixe.html">Peixe</a>
+							<a href="Sobremesa.html">Sobremesas</a>
+							<a href="Especialidades.html">Especialidades</a>
+						</div>
+					</li>
+				<li><a href="Galeria.html">Galeria</a></li>
+				<li><a href="Localizacao.html">Localização</a></li>
+				<li id="contact">
+					<details>
+						<summary>Contacto: <mark id="contact">+351 249 733 093</mark></summary>
+						<address>pezinhosnorio@gmail.com</address>
+					</details>
+				</li>
+			</ul>
+		</nav>
+		<article class="row">
+			<section class="col-9 col-m-12">
+				<article>
+					<header>
+						<h1 id="title">Especialidades da Casa</h1>
+					</header>
+					<section>
+						<p id="contents">O nosso restaurante distingue-se pela diferença na preparação e apresentação das nossas especialidades, que o vão deixar com vontade de regressar.</p>
+						<table id="ementa" align="center">
+							<thead>
+								<tr>
+									<th id="ementa">Pratos</th>
+									<th id="ementa_border">Acompanhamentos</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr id="ementa">
+									<td id="ementa">Maminha de Carne de Vaca Grelhada na Pedra</td>
+									<td id="ementa_border">Batata Frita, Fruta e Molhos</td>
+								</tr>
+								<tr id="ementa">
+									<td id="ementa">Fataça do Rio Tejo Frita</td>
+									<td id="ementa_border">Açorda de Ovas e Salada</td>
+								</tr>
+							</tbody>
+						</table>
+						<br>
+						<figure id="res">
+							<img id="myEsp" src="imagens/maminha.jpg" alt="Maminha de Carne de Vaca Grelhada com Batata Frita, Fruta e Molhos" width="550" height="400">
+						</figure>
+						<figure id="res">
+							<img id="myMeat" src="imagens/fataca.jpg" alt="Fataça do Rio Tejo Frita com Açorda de Ovas e Salada" width="400" height="450">
+						</figure>
+						<!-- The Modal -->
+						<section id="myModal" class="modal">
+							<span class="close">&times;</span>
+							<img class="modal-content" id="img01">
+							<section id="caption"></section>
+						</section>
+					</section>
+				</article>
+			</section>
+			<aside class="col-3 col-m-12">
+				<figure id="wordcloud">
+					<img src="imagens/wordcloud_pequena.png" width="270" height="134" id="wordcloud" usemap="#map1">
+					<map name="map1">
+						<area href="index.html" shape="rect" coords="35,0,235,33">
+						<area href="Galeria.html" shape="rect" coords="100,36,136,45">
+						<area href="Galeria.html" shape="rect" coords="102,48,149,57">
+						<area href="Especialidades.html" shape="rect" coords="148,38,202,47">
+						<area href="Restaurante.html" shape="rect" coords="0,57,270,84">
+						<area href="Restaurante.html#C" shape="rect" coords="120,85,166,93">
+						<area href="Galeria.html" shape="rect" coords="84,95,257,133">
+					</map>
+				</figure>
+				<table>
+					<caption>Horário</caption>
+					<thead><tr><th>Segunda-feira</th><td id="hours">09:00-23:45</td></tr></thead>
+					<tbody>
+						<tr><th>Terça-feira</th><td id="hours">09:00-23:45</td></tr>
+						<tr><th id="background">Quarta-feira</th><td id="close">Fechado</td></tr>
+						<tr><th>Quinta-feira</th><td id="hours">09:00-23:45</td></tr>
+						<tr><th>Sexta-feira</th><td id="hours">09:00-23:45</td></tr>
+						<tr><th>Sábado</th><td id="hours">09:00-23:45</td></tr>
+					</tbody>
+					<tfoot><tr><th>Domingo</th><td id="hours">09:00-23:45</td></tr></tfoot>
+				</table>
+				<section id="small_map">
+					<iframe id="small_map" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d7324.608633527186!2d-8.339913997128924!3d39.47794488721733!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-PT!2spt!4v1514028935164" width="280" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</section>
+			</aside>
+		</article>
+		<footer>
+			<p>© Copyright 2018 Restaurante Pézinhos no Rio. All rights reserved to Nuno Marques</p>
+		</footer>
+		<script>
+			// Get the modal
+			var modal = document.getElementById('myModal');
+			// Get the image
+			var img1 = document.getElementById('myEsp');
+			var img2 = document.getElementById('myMeat');
+			// Insert it inside the modal - use its "alt" text as a caption
+			var modalImg = document.getElementById("img01");
+			var captionText = document.getElementById("caption");
+			//handle click for myEsp
+			img1.onclick = function(){
+				modal.style.display = "block";
+				modalImg.src = this.src;
+				captionText.innerHTML = this.alt;
+			}
+			//handle click for myMeat
+			img2.onclick = function(){
+				modal.style.display = "block";
+				modalImg.src = this.src;
+				captionText.innerHTML = this.alt;
+			}
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close")[0];
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function(){ 
+				modal.style.display = "none";
+			}
+		</script>
+	</body>
+</html>
